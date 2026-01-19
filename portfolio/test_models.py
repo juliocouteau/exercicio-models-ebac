@@ -1,5 +1,5 @@
 import pytest
-from .factories import ProjectFactory
+from .factorie import ProjectFactory
 
 @pytest.mark.django_db
 def test_project_creation():
