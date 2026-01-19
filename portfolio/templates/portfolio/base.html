@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Blog</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section { background-color: #5196ce; color: white; padding: 60px 0; }
+        footer { background-color: #f8f9fa; padding: 20px 0; margin-top: 40px; text-align: center; border-top: 1px solid #ddd; }
+        .post-card { margin-bottom: 20px; border: 1px solid #ddd; padding: 25px; border-radius: 5px; background: white; }
+    </style>
+</head>
+<body class="bg-light">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Django</a>
+            <div class="ms-auto d-flex gap-3">
+                <a class="nav-link text-secondary" href="#">About</a>
+                <a class="nav-link text-secondary" href="#">Policy</a>
+                <a class="nav-link text-secondary" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="container text-muted">
+            Backend Python - EBAC
+        </div>
+    </footer>
+</body>
+</html>
